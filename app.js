@@ -1,21 +1,17 @@
-/*const numbers =[1, 2, 3];
+const numbers = [1, 2, 3]
+const [a, , b] = numbers;
+console.log(a, b)
 
-console.log(numbers);
-
-const newNumbers = [...numbers, 4]
-console.log(newNumbers);*/
-
-/*const person ={
-    name: "Kertu"
-}
-
-const newPerson ={
-    ...person,
+const person ={
+    name: "Kertu",
     age: 25
-}*/
-
-const filter = (...args) => {
-    return args.filter(el => el === 1)
 }
 
-console.log(filter(args 1, 2, 3, 4))
+const {name}=person;
+const {age}=person;
+console.log(name);
+console.log(age);
+
+const printName = ([name]) => console.log(name)
+
+printName(person);
